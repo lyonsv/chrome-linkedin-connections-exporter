@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Connections Exporter",
+  "version": "1.0.0",
+  "description": "Export your LinkedIn connections (name, title, connection date, profile URL) to a CSV file.",
+  "permissions": ["storage", "scripting", "activeTab", "unlimitedStorage"],
+  "host_permissions": ["https://www.linkedin.com/*"],
+  "action": {
+    "default_title": "Export LinkedIn connections",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,8 @@
+# Exported data (contains other people's personal info)
+*.csv
+diagnostics*.json
+
+.DS_Store
+*.zip
+*.crx
+*.pem

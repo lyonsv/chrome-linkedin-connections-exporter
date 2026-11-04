@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>LinkedIn Connections Exporter</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>LinkedIn Connections Exporter</h1>
+
+  <div id="wrong-page" class="box info" hidden>
+    <p>Open your LinkedIn connections page to start.</p>
+    <button id="open-page">Open connections page</button>
+  </div>
+
+  <div id="main" hidden>
+    <div class="progress">
+      <div class="count"><span id="count">0</span><span id="total"></span></div>
+      <div class="bar"><div id="bar-fill"></div></div>
+      <div id="phase" class="phase">Ready.</div>
+    </div>
+
+    <div id="error" class="box error" hidden></div>
+    <div id="success" class="box success" hidden></div>
+    <ul id="warnings" class="box warn" hidden></ul>
+
+    <div class="buttons">
+      <button id="start" class="primary">Start export</button>
+      <button id="stop" hidden>Stop</button>
+      <button id="download" hidden>Download CSV</button>
+    </div>
+    <button id="copy-diag" class="link" hidden>Copy diagnostics (for bug reports)</button>
+    <p class="hint">Keep the LinkedIn tab in front while it runs — Chrome slows down background tabs. You can close this popup.</p>
+  </div>
+
+  <script src="lib.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
